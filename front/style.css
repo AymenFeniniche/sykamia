@@ -115,57 +115,40 @@ header .bx{ color:var(--text); font-size:1.7rem; }
 /* =======================
    HOME (Swiper)
 ======================= */
-.slide-box{
-  width:100%;
-  min-height:640px;
-  position:relative;
-  display:flex;
-  align-items:center;
-}
-.slide-box img{
-  position:absolute;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  z-index:-1;
-}
-.slide-box::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(2,3,7,.4);
+.home{
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
 }
 
-.swiper-pagination-bullet{
-  width:6px!important;
-  height:6px!important;
-  border-radius:.2rem!important;
-  background:var(--text)!important;
-  opacity:1!important;
-}
-.swiper-pagination-bullet-active{
-  width:1.5rem!important;
-  background:var(--accent)!important;
+.hero{
+  max-width: 900px;
 }
 
-.slide-box-content{ z-index:10; padding:0 150px; }
-.slide-box-content span{
-  font-weight:600;
-  text-transform:uppercase;
-  font-size:clamp(18px,5vw,30px);
+.hero h1{
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
 }
-.slide-box-content h1{
-  font-size:clamp(30px,5vw,60px);
-  margin-bottom:1rem;
+
+.hero h1 span{
+  color: #a855f7; /* violet / IA */
 }
-.slide-box-content .play{
-  position:absolute;
-  right:4rem;
-  bottom:10%;
-  font-size:3rem;
-  color:var(--text);
+
+.hero p{
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  color: rgba(255,255,255,0.75);
+  line-height: 1.6;
 }
-.slide-box-content .play:hover{ color:var(--accent); }
+
+.hero strong{
+  color: #ffffff;
+  font-weight: 600;
+}
 
 /* =======================
    GRIDS (Films/Séries)

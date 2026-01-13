@@ -7,6 +7,14 @@ function qs(id) {
   return document.getElementById(id);
 }
 
+const TMDB_KEY = "TA_CLE_API";
+const URL = `https://api.themoviedb.org/3/movie/now_playing?api_key=${TMDB_KEY}&language=fr-FR&page=1`;
+
+async function loadNowPlaying() {
+  const res = await fetch(URL);
+  const data = await res.json();
+  return data.results; // liste de films
+}
 async function fetchJSON(url) {
   const res = await fetch(url);
   if (!res.ok) throw new Error(`HTTP ${res.status} - ${url}`);
