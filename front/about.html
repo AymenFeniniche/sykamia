@@ -6,70 +6,60 @@
     <!-- boxicon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
 
 
-    <!-- ################## -->
-    <!-- Navigation -->
-    <!-- ################## -->
+<!-- Navigation -->
 
-    <header>
-        <a href="index.html" class="logo">
-            <img src="./logo.svg" alt="Logo du site" class="logo-img">
-        </a>
-        <ul class="navigation">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="films.html">Films</a></li>
-            <li><a href="series.html">Séries</a></li>
-            <li><a href="about.html">À propos</a></li>
-        </ul>
-        <div class="header-tools">
-        <div class="header-search">
-          <i class='bx bx-search'></i>
-          <input id="searchInput" type="text" placeholder="Rechercher un titre..." />
-        </div>
+<header>
+    <a href="index.html" class="logo">
+        <img src="./logo.svg" alt="Logo du site" class="logo-img">
+    </a>
+    <ul class="navigation">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="films.html">Films</a></li>
+        <li><a href="series.html">Séries</a></li>
+        <li><a href="about.html" class="link-active">À propos</a></li>
+    </ul>
+    <div class="header-search">
+        <i class='bx bx-search'></i>
+        <input id="searchInput" type="text" placeholder="Rechercher un titre..." />
+    </div>
+    <a href="chatbot.html" class="btn">Lancer le ChatBot</a>
+    <div class="bx bx-menu" id="menu-burger"></div>
+</header> 
 
-        <a href="chatbot.html" class="btn">Lancer le ChatBot</a>
-        </div>
-        <div class="bx bx-menu" id="menu-burger"></div>
-    </header> 
-
-    <!-- ################## -->
-    <!-- À propos -->
-    <!-- ################## -->
+<!-- À propos -->
 
 <section class="about">
     <h2>À propos</h2>
-
-  <p>
+<p>
     SykamIA a été créé pour vous offrir un accès simple et rapide aux informations essentielles sur les films et les séries. Ici, vous pouvez parcourir des titres, découvrir des œuvres et trouver facilement les éléments dont vous avez besoin pour faire votre choix.
     Pour rendre votre navigation encore plus fluide, vous pouvez aussi poser vos questions à notre assistant conversationnel intégré. Il est là pour vous aider à explorer le site et à obtenir des réponses en quelques instants.
-    Si vous avez une question ou une remarque à propos de SykamIA, vous pouvez nous contacter grâce au formulaire ci-dessous.
-  </p>
-
+</p>
+<p class="contact-info">
+    Si vous avez une question ou une remarque à propos de SykamIA, vous pouvez nous contacter à l'adresse suivante : <br><br>
+    <a href="mailto:contact@sykamia.fr">contact@sykamia.fr</a>
+</p>
 </section>
 
+<!-- Footer -->
 
-    <!-- ################## -->
-    <!-- Footer -->
-    <!-- ################## -->
-
-    <footer class="site-footer">
-        <a href="index.html" class="footer-logo">
-            <img src="./logo.svg" alt="Logo du site" class="logo-img">
-        </a>
-        <p class="footer-credits">&copy; sykamIA - Tous droits réservés - 2026</p>
-                
-    </footer>
+<footer class="site-footer">
+    <a href="index.html" class="footer-logo">
+        <img src="./logo.svg" alt="Logo du site" class="logo-img">
+    </a>
+    <p class="footer-credits">&copy; sykamIA - Tous droits réservés - 2026</p>      
+</footer>
 
 
 <!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-    <script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

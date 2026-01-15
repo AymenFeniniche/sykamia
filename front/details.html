@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Détails - SykamIA</title>
+</head>
+<body>
+
+<!-- Navigation -->
+<header>
+    <a href="index.html" class="logo">
+        <img src="./logo.svg" alt="Logo du site" class="logo-img">
+    </a>
+    <ul class="navigation">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="films.html">Films</a></li>
+        <li><a href="series.html">Séries</a></li>
+        <li><a href="about.html">À propos</a></li>
+    </ul>
+    <div class="header-search">
+        <i class='bx bx-search'></i>
+        <input id="searchInput" type="text" placeholder="Rechercher un titre..." />
+    </div>
+    <a href="chatbot.html" class="btn">Lancer le ChatBot</a>
+    <div class="bx bx-menu" id="menu-burger"></div>
+</header>
+
+<!-- Détails -->
+<section class="details-page">
+    <div class="details-container">
+        <div class="details-poster">
+            <img id="detailsPoster" src="" alt="Affiche">
+        </div>
+        <div class="details-info">
+            <h1 id="detailsTitle">Chargement...</h1>
+            <div class="details-meta">
+                <span id="detailsGenre"></span>
+                <span id="detailsYear"></span>
+                <span id="detailsDuration"></span>
+            </div>
+            <div class="details-section">
+                <h3>Synopsis</h3>
+                <p id="detailsSynopsis"></p>
+            </div>
+            <div class="details-section">
+                <h3 id="detailsDirectorsLabel">Réalisateur(s)</h3>
+                <p id="detailsDirectors"></p>
+            </div>
+            <div class="details-section">
+                <h3>Acteurs principaux</h3>
+                <p id="detailsActors"></p>
+            </div>
+            <button onclick="history.back()" class="btn btn-back">
+                <i class='bx bx-arrow-back'></i> Retour
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Recommandations -->
+<section class="recommendations">
+    <h2 class="section-heading">Vous pourriez aussi aimer</h2>
+    <div class="recommendations-container" id="recommendationsContainer">
+        <!-- Les recommandations seront chargées ici -->
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <a href="index.html" class="footer-logo">
+        <img src="./logo.svg" alt="Logo du site" class="logo-img">
+    </a>
+    <p class="footer-credits">&copy; sykamIA - Tous droits réservés - 2026</p>
+</footer>
+
+<script src="app.js"></script>
+<script src="details.js"></script>
+</body>
+</html>

@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const output = document.querySelector("#chat-output");
   if (!form || !input || !output) return;
 
-  const API_BASE = "http://127.0.0.1:8000";
+  const API_BASE = "http://127.0.0.1:5500";
   const MODEL = "llama3.2";
 
-  // ---------- utils ----------
+  // ----------outils ----------
   const escapeHtml = (str = "") =>
     str
       .replaceAll("&", "&amp;")
